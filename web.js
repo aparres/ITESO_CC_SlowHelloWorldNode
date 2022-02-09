@@ -11,7 +11,7 @@ request(url, function (error, response, body) {
 const server = http.createServer((req,res) => {
 	console.log('url:',req.url)
 	console.log('going slow')
-	for(var i=0; i<10000000; i++) {}
+	for(var i=0; i<1000000000; i++) {}
 	res.statusCode = 200;
 	res.setHeader('Content-Type', 'text/plain');
 	res.end('Hello Wolrd from '+localIP+'\n');
